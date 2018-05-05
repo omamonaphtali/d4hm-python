@@ -1,0 +1,195 @@
+{% load static from staticfiles %}
+
+<!--
+author: weib solutions
+author URL: http://weibsolutions.com
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dial4HM</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="{% static 'css/flexslider.css' %}" type="text/css" media="screen" property="" />
+<link rel="stylesheet" href="{% static 'css/custom.css' %}" type="text/css" media="screen" property="" />
+<!-- js -->
+<script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+<!-- //js -->
+<!-- font-awesome-icons -->
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
+<!-- //font-awesome-icons -->
+<link href="//fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <!-- footer-->
+    <div class="footer" style="color: #000000;">
+    <div class="container">
+        <div class="w3_agile_footer_grids">
+            <!--
+            <div class="col-md-4 w3_agile_footer_grid">
+                <h3>Latest Tweets</h3>
+                <ul class="agile_footer_grid_list">
+                    <li><i class="fa fa-twitter" aria-hidden="true"></i>Nam libero tempore, cum soluta nobis est eligendi optio
+                        cumque nihil impedit. <span>1 day ago</span></li>
+                    <li><i class="fa fa-twitter" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus <a href="mailto:info@mail.com">info@mail.com</a>
+                        cumque nihil impedit. <span>2 days ago</span></li>
+                </ul>
+            </div> -->
+            <!--
+            <div class="col-md-4 w3_agile_footer_grid">
+                <h3>Navigation</h3>
+                <ul class="agileits_w3layouts_footer_grid_list">
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="index.html">Home</a></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="about.html">About</a></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            -->
+            <!--
+            <div class="col-md-4 w3_agile_footer_grid">
+                <h3>Instagram Posts</h3>
+                <div class="w3_agileits_footer_grid_left">
+                    <a href="#"><img src="images/s6.jpg" alt=" " class="img-responsive" /></a>
+                </div>
+                <div class="w3_agileits_footer_grid_left">
+                    <a href="#"><img src="images/s2.jpg" alt=" " class="img-responsive" /></a>
+                </div>
+                <div class="w3_agileits_footer_grid_left">
+                    <a href="#"><img src="images/s1.jpg" alt=" " class="img-responsive" /></a>
+                </div>
+                <div class="w3_agileits_footer_grid_left">
+                    <a href="#"><img src="images/s3.jpg" alt=" " class="img-responsive" /></a>
+                </div>
+                <div class="w3_agileits_footer_grid_left">
+                    <a href="#"><img src="images/s4.jpg" alt=" " class="img-responsive" /></a>
+                </div>
+                <div class="w3_agileits_footer_grid_left">
+                    <a href="#"><img src="images/s5.jpg" alt=" " class="img-responsive" /></a>
+                </div>
+                <div class="clearfix"> </div>
+            </div> -->
+            <div class="clearfix"> </div>
+        </div> <!--
+        <div class="w3_newsletter_footer_grids">
+            <div class="w3_newsletter_footer_grid_left">
+                <form action="#" method="post">
+                    <input type="email" name="Email" placeholder="Email" required="">
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div> -->
+        <div class="w3ls_address_mail_footer_grids">
+            <div class="col-md-4 w3ls_footer_grid_left">
+                <div class="wthree_footer_grid_left">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+                <p>Suna Apartments, Suna Road, <span>off Naivasha Rd, Nairobi.</span></p>
+            </div>
+            <div class="col-md-4 w3ls_footer_grid_left">
+                <div class="wthree_footer_grid_left">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                </div>
+                <p><a href="tel:+254714379466">+(254) 714 379 466</a> <span><a href="tel:+254702658482">+(254) 702 658 482</a></span> <span><a
+                                href="tel:+254720990084">+(254) 720 990 084 </a></span></p>
+            </div>
+            <div class="col-md-4 w3ls_footer_grid_left">
+                <div class="wthree_footer_grid_left">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </div>
+                <p><a href="mailto:4housemanager@gmail.com">4housemanager@gmail.com</a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="agileinfo_copyright">
+            <p>&copy; copyright <!-- <?php print date("Y");?> --> Dial for a House Manager.<br> All Rights Reserved <br> Design by <a href="https://weibsolutions.com/">Weib</a></p>
+        </div>
+    </div>
+</div>
+    <!-- //footer-->
+
+	<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+
+<!-- for bootstrap working -->
+	<script src="{% static 'js/bootstrap.js' %}"></script>
+<!-- //for bootstrap working -->
+<!-- carousal -->
+	<script src="{% static 'js/slick.js' %}" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).on('ready', function() {
+		  $(".center").slick({
+			dots: true,
+			infinite: true,
+			centerMode: true,
+			slidesToShow: 2,
+			slidesToScroll: 2,
+			responsive: [
+				{
+				  breakpoint: 768,
+				  settings: {
+					arrows: true,
+					centerMode: false,
+					slidesToShow: 2
+				  }
+				},
+				{
+				  breakpoint: 480,
+				  settings: {
+					arrows: true,
+					centerMode: false,
+					centerPadding: '40px',
+					slidesToShow: 1
+				  }
+				}
+			 ]
+		  });
+		});
+	</script>
+<!-- //carousal -->
+<!-- gauge-meter -->
+	<script src="{% static 'js/jquery.gauge.js' %}"></script>
+	<script>
+		$(document).ready(function (){
+			$("#gauge1").gauge(30,{color: "#fb5710",unit: " %",type: "halfcircle"});
+			$("#gauge2").gauge(70, {color: "#a821e7", unit: " %",type: "halfcircle"});
+			$("#gauge3").gauge(75, {color: "#fbb810",unit: " %",type: "halfcircle"});
+			$("#gauge4").gauge(90, {color: "#21d0e7",unit: " %",type: "halfcircle"});
+		});
+	</script>
+<!-- //gauge-meter -->
+
+</body>
+</html>

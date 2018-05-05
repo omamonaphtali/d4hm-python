@@ -1,0 +1,95 @@
+.agileits_w3layouts_banner_info h3{
+    color: red;!important;
+}
+.wthree-services-captn-active{
+    display: block;
+    top: 0;
+}
+.wthree-services-captn ul{
+    list-style-type: none;
+}
+.wthree-services-captn ul li{
+    text-align: left;
+    list-style-type: none;
+}
+.agileits-about-top .container p.w3agile{
+    text-align: left;
+}
+
+#gallery{
+    /*background: url(/static/images/orange-stripe.png) fixed right center no-repeat;*/
+    background-color: #FFFFFF;
+    background-size: cover;
+}
+#gallery .row div{
+    padding-bottom: 10px;
+}
+#gallery .row div:hover #gallery img{
+    transform: scale(1.5);
+    overflow: hidden;
+    cursor: pointer;
+}
+#gallery img{
+    width: 100%;
+    height: auto;
+}
+.modal{
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.modal-header button{
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.modal-body img{
+    width: 100%;
+}
+img{
+    margin: auto;
+}
+@media only  screen and (max-width: 500px) {
+
+}
+/*-- //testimonials --*/
+.skills h3 span {
+    color: #fff;
+}
+/*-- footer --*/
+.footer {
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background: #444444 url(../images/d4hm5.jpg) no-repeat fixed 0 0;
+    padding: 5em 0;
+    opacity: 0.9;
+}
+.footer p, .footer a, .footer p a{
+    color: #000000;
+    font-weight: bold;
+}
+.btn{
+    margin: 20px;
+    border: none;
+}
+.btn-danger{
+    background-color: red;
+}
+.breadcrumb{
+    background: none;
+    position: absolute;
+    bottom: 20px;
+}
+.breadcrumb li, .breadcrumb a{
+    color: #000000!important;
+    font-size: 20px!important;
+    font-weight: bold!important;
+}
+.breadcrumb .active{
+    color: red!important;
+}
+
+/* profiles */
+
+

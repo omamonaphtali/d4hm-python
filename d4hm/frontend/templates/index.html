@@ -1,0 +1,284 @@
+{% extends 'base_layout.html' %}
+{% load static from staticfiles %}
+
+{% block content %}
+<!-- banner -->
+	<div class="banner">
+        <div>
+            {% include 'navbar.html' %}
+        </div>
+		<div class="container">
+			<div class="w3_agile_banner_info">
+				<section class="slider">
+						<div class="flexslider">
+							<ul class="slides">
+								<li>
+									<div class="agileits_w3layouts_banner_info">
+										<p>The ultimate home hospitality providers in<br> Kenya and beyond</p>
+										<h3></h3>
+									</div>
+								</li>
+                                <li>
+                                    <div class="agileits_w3layouts_banner_info">
+                                        <p>Sharpen your skills</p>
+                                        <a href="about.html"><h3>Take our course today</h3></a><!-- link to info on course -->
+                                    </div>
+                                </li>
+								<li>
+									<div class="agileits_w3layouts_banner_info">
+                                        <p>Interested in a qualified house manager?</p>
+                                        <a href="#"><h3>Hire a house manager</h3></a><!-- link to how to hire a house manager -->
+									</div>
+								</li>
+								<li>
+									<div class="agileits_w3layouts_banner_info">
+                                        <p>Looking for more info?</p>
+                                        <a href="about.html"><h3>Learn more</h3></a><!-- link to more info -->
+									</div>
+								</li>
+							</ul>
+						</div>
+				</section>
+			<!-- flexSlider -->
+				<script defer src="{% static 'js/jquery.flexslider.js' %}"></script>
+				<script type="text/javascript">
+					$(window).load(function(){
+					  $('.flexslider').flexslider({
+						animation: "slide",
+						start: function(slider){
+						  $('body').removeClass('loading');
+						}
+					  });
+					});
+				</script>
+			<!-- //flexSlider -->
+				
+			</div>
+			<div class="agile_banner_social">
+				<ul class="agileits_social_list">
+					<li><a href="https://www.facebook.com/Dial4HM/" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li> <!--
+					<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li> -->
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- //banner -->	
+<!-- banner-bottom -->
+	<div class="banner-bottom">
+		<div class="container">
+		<h2 class="w3ls_head"><span>Wel</span>come</h2>
+			<p class="w3agile">Dial for a house manager is an academy that exists with a mission to make the professional woman's life more comfortable by training and providing the professional House Manager and Nannies.</p>
+			<div class="wel-ind">
+				<div class="col-md-6 agileits_banner_bottom_right">
+					<div class="w3ls_banner_bottom_right">
+						<img src="static/images/dhm12.jpg" alt="Dial4HM" height="400" width="400" class="img-responsive" />
+						<div class="w3ls_banner_bottom_right_pos">
+							<img src="{%  static 'images/dhm13.jpg' %}" alt="Dial4HM" height="576" width="576" class="img-responsive" />
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 agileits_banner_bottom_left">
+				<h4>Experience</h4>
+				<p>What makes us the ultimate destination for qualified house managers; whether you're looking to recruit one or seekimg to sharpen your skills.</p>
+					<div class="w3l_social_icons">
+						<div class="w3l_social_icon_grid">
+							<div class="w3l_social_icon_gridl w3_facebook">
+								<a href="#">
+									<i class="fa fa-clock-o" aria-hidden="true"></i>
+								</a>
+							</div>
+							<div class="w3l_social_icon_gridr">
+								<h5 class="counter">5</h5>
+							</div>
+							<div class="clearfix"> </div>
+							<div class="w3l_social_icon_grid_pos">
+								<label>-</label>
+							</div>
+						</div>
+						<div class="w3l_social_icon_grid w3ls_social_icon_grid">
+							<div class="w3l_social_icon_gridl w3_dribbble">
+								<a href="#">
+									<i class="fa fa-users" aria-hidden="true"></i>
+								</a>
+							</div>
+							<div class="w3l_social_icon_gridr">
+								<h5 class="counter">500</h5>
+							</div>
+							<div class="clearfix"> </div>
+							<div class="w3l_social_icon_grid_pos">
+								<label>-</label>
+							</div>
+						</div>
+						<div class="w3l_social_icon_grid">
+							<div class="w3l_social_icon_gridl w3_instagram">
+								<a href="#">
+									<i class="fa fa-tasks" aria-hidden="true"></i>
+								</a>
+							</div>
+							<div class="w3l_social_icon_gridr">
+								<h5 class="counter">19</h5>
+							</div>
+							<div class="clearfix"> </div>
+							<div class="w3l_social_icon_grid_pos">
+								<label>-</label>
+							</div>
+						</div>
+                        <div class="clearfix"></div>
+                        <div>
+                            <a href="profiles" class="btn btn-danger btn-lg">Choose a house manager</a>
+                        </div>
+					</div>
+				</div>
+			<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //banner-bottom -->
+<!-- Stats -->
+	<script src="{% static 'js/waypoints.min.js' %}"></script> 
+	<script src="{% static 'js/counterup.min.js' %}"></script> 
+	<script>
+		jQuery(document).ready(function( $ ) {
+			$('.counter').counterUp({
+				delay: 10,
+				time: 2000
+			});
+		});
+	</script>
+<!-- //Stats -->
+<!-- skills -->
+<!--
+	<div class="skills">
+		<div class="container">
+			<h3 class="w3ls_head"><span>Our </span>Skills</h3>
+			<p class="w3agile">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+				corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+			<div class="w3layouts_skills_grids">
+				<div class="col-md-3 w3ls_about_guage">
+					<canvas id="gauge1" width="200" height="100"></canvas>
+					<h4>Make Money</h4>
+				</div>
+				<div class="col-md-3 w3ls_about_guage">
+					<canvas id="gauge2" width="200" height="100"></canvas>
+					<h4>Matching Buyer</h4>
+				</div>
+				<div class="col-md-3 w3ls_about_guage">
+					<canvas id="gauge3" width="200" height="100"></canvas>
+					<h4>Market Appraisals</h4>
+				</div>
+				<div class="col-md-3 w3ls_about_guage">
+					<canvas id="gauge4" width="200" height="100"></canvas>
+					<h4>Support</h4>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	-->
+<!-- //skills -->
+<!-- work process -->
+	<div class="what-w3ls">
+		<div class="container">
+			<h3 class="w3ls_head"><span>Work </span>Process</h3>
+			<p class="w3agile"></p>
+				<div class="what-grids">
+					<div class="col-md-6 what-grid">
+						<img src="static/images/d4hm2.jpg" height="540px" width="440px" class="img-responsive" alt="Work Process"/>
+						<div class="what-agile-info">
+							<h4>Redeployment</h4>
+							<p>The contract stipulates that a trainee can be redeployed by the company if the need arises. However, once permanent employment has been achieved, the contract is terminated and that marks the end of a successful training.</p>
+						</div>
+					</div>
+					<div class="col-md-6 what-grid1">
+                        <div class="what-top1">
+                            <div class="what-left">
+                                <i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i>
+                            </div>
+                            <div class="what-right">
+                                <h4>Interview</h4>
+                                <p>the interested party is interviewed by our panel to understand exactly what they would like to benefit from.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+						<div class="what-top">
+							<div class="what-left">
+								<i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i>
+							</div>
+							<div class="what-right">
+								<h4>Training</h4>
+								<p>the house managers are trained on how to go on and about their jobs and how to handle the various scenarios they come across.</p>
+							</div>
+								<div class="clearfix"></div>
+						</div>
+						<div class="what-top1">
+                            <div class="what-left">
+                                <i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i>
+                            </div>
+							<div class="what-right">
+								<h4>Vetting & On-boarding</h4>
+								<p>the house managers are assessed based on what they’ve learned and this determines if they keep at it or not.</p>
+							</div>
+								<div class="clearfix"></div>
+						</div>
+                        <div class="what-top1">
+                            <div class="what-left">
+                                <i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i>
+                            </div>
+                            <div class="what-right">
+                                <h4>On-the-job-training</h4>
+                                <p>even after being placed to their various places of work, we continuously assess the work of our trainees to ensure they always perform to the standards that we have set.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+					</div>
+						<div class="clearfix"></div>
+				</div>
+		</div>
+	</div>
+<!-- //work process -->
+<!-- testimonials -->
+	<div class="testimonials">
+		<div class="container">
+			<h3 class="w3ls_head"><span>Testim</span>onials</h3>
+			<p class="w3agile"></p>
+				
+			<div class="w3ls_testimonials_grids">
+				 <section class="center slider">
+						<div class="agileits_testimonial_grid">
+							<div class="w3l_testimonial_grid">
+								<p>The house manager I hired is amazing. Kudos to you guys.</p>
+								<h4>Miss Keysha</h4>
+								<h5>Employer</h5>
+								<div class="w3l_testimonial_grid_pos">
+									<img src="static/images/1.png" alt=" " class="img-responsive" />
+								</div>
+							</div>
+						</div>
+						<div class="agileits_testimonial_grid">
+							<div class="w3l_testimonial_grid">
+								<p>I gained insightful knowledge that bettered me.</p>
+								<h4>Laura Paul</h4>
+								<h5>Student</h5>
+								<div class="w3l_testimonial_grid_pos">
+									<img src="static/images/2.png" alt=" " class="img-responsive" />
+								</div>
+							</div>
+						</div>
+						<div class="agileits_testimonial_grid">
+							<div class="w3l_testimonial_grid">
+								<p>We recruited their services when relocating to our new office premises. They did a splendid job.</p>
+								<h4>Michael Doe</h4>
+								<h5>Business man</h5>
+								<div class="w3l_testimonial_grid_pos">
+									<img src="static/images/3.png" alt=" " class="img-responsive" />
+								</div>
+							</div>
+						</div>
+				</section>
+			</div>
+		</div>
+	</div>
+<!-- //testimonials -->
+{% endblock %}
