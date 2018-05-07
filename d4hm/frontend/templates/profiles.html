@@ -1,5 +1,6 @@
 {% extends 'base_layout.html' %}
 {% load static from staticfiles %}
+{% load rest_framework %}
 
 {% block content %}
 
@@ -17,11 +18,11 @@
 	</div>
     <div>
         <ul>
-            {% for employee in employees %}
-                <li>{{ employee.name }}</li>
-                <li>{{ employee.title }}</li>
-                <li>{{ employee.bio }}</li>
-                <img src="{{ employee.avatar }}" alt="avatar">
+            {% for SavedEmployeess in SavedEmployees %}
+                <li>{{ SavedEmployees.name }}</li>
+                <li>{{ SavedEmployees.title }}</li>
+                <li>{{ SavedEmployees.bio }}</li>
+                <img src="{{ SavedEmployees.avatar }}" alt="avatar">
             {% endfor %}
         </ul>
     </div>

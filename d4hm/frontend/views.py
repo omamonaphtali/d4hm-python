@@ -23,15 +23,18 @@ def contact(request):
 
 
 def profiles(request):
-    employee = []
     temp = requests.get(url='http://dial4.herokuapp.com/employees')
     json = temp.json()
     serializer = EmployeeSerializer(data=json)
     if serializer.is_valid():
+        employee = serializer.save()
         for i in range(len(serializer)):
             if i % 1 == 0:
                 names = serializer[i]
                 employee.append(names)
+                return render(request, 'profiles.html', {
+
+                })
             # else:
             #     names == serializer[i]
             #     employee.append(names)

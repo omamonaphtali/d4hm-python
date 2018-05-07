@@ -1,3 +1,5 @@
+
+
 {% extends 'base_layout.html' %}
 {% load static from staticfiles %}
 
@@ -73,7 +75,7 @@
 			<div class="wel-ind">
 				<div class="col-md-6 agileits_banner_bottom_right">
 					<div class="w3ls_banner_bottom_right">
-						<img src="static/images/dhm12.jpg" alt="Dial4HM" height="400" width="400" class="img-responsive" />
+						<img src="{% static 'images/dhm12.jpg' %}" alt="Dial4HM" height="400" width="400" class="img-responsive" />
 						<div class="w3ls_banner_bottom_right_pos">
 							<img src="{%  static 'images/dhm13.jpg' %}" alt="Dial4HM" height="576" width="576" class="img-responsive" />
 						</div>
@@ -126,9 +128,9 @@
 							</div>
 						</div>
                         <div class="clearfix"></div>
-                        <div>
-                            <a href="profiles" class="btn btn-danger btn-lg">Choose a house manager</a>
-                        </div>
+{#                        <div>#}
+{#                            <a href="profiles" class="btn btn-danger btn-lg">Choose a house manager</a>#}
+{#                        </div>#}
 					</div>
 				</div>
 			<div class="clearfix"> </div>
@@ -185,7 +187,7 @@
 			<p class="w3agile"></p>
 				<div class="what-grids">
 					<div class="col-md-6 what-grid">
-						<img src="static/images/d4hm2.jpg" height="540px" width="440px" class="img-responsive" alt="Work Process"/>
+						<img src="{% static 'images/d4hm2.jpg' %}" height="540px" width="440px" class="img-responsive" alt="Work Process"/>
 						<div class="what-agile-info">
 							<h4>Redeployment</h4>
 							<p>The contract stipulates that a trainee can be redeployed by the company if the need arises. However, once permanent employment has been achieved, the contract is terminated and that marks the end of a successful training.</p>
@@ -239,46 +241,46 @@
 	</div>
 <!-- //work process -->
 <!-- testimonials -->
-	<div class="testimonials">
-		<div class="container">
-			<h3 class="w3ls_head"><span>Testim</span>onials</h3>
-			<p class="w3agile"></p>
-				
-			<div class="w3ls_testimonials_grids">
-				 <section class="center slider">
-						<div class="agileits_testimonial_grid">
-							<div class="w3l_testimonial_grid">
-								<p>The house manager I hired is amazing. Kudos to you guys.</p>
-								<h4>Miss Keysha</h4>
-								<h5>Employer</h5>
-								<div class="w3l_testimonial_grid_pos">
-									<img src="static/images/1.png" alt=" " class="img-responsive" />
-								</div>
-							</div>
-						</div>
-						<div class="agileits_testimonial_grid">
-							<div class="w3l_testimonial_grid">
-								<p>I gained insightful knowledge that bettered me.</p>
-								<h4>Laura Paul</h4>
-								<h5>Student</h5>
-								<div class="w3l_testimonial_grid_pos">
-									<img src="static/images/2.png" alt=" " class="img-responsive" />
-								</div>
-							</div>
-						</div>
-						<div class="agileits_testimonial_grid">
-							<div class="w3l_testimonial_grid">
-								<p>We recruited their services when relocating to our new office premises. They did a splendid job.</p>
-								<h4>Michael Doe</h4>
-								<h5>Business man</h5>
-								<div class="w3l_testimonial_grid_pos">
-									<img src="static/images/3.png" alt=" " class="img-responsive" />
-								</div>
-							</div>
-						</div>
-				</section>
-			</div>
-		</div>
-	</div>
+{#	<div class="testimonials">#}
+{#		<div class="container">#}
+{#			<h3 class="w3ls_head"><span>Testim</span>onials</h3>#}
+{#			<p class="w3agile"></p>#}
+{#				#}
+{#			<div class="w3ls_testimonials_grids">#}
+{#				 <section class="center slider">#}
+{#						<div class="agileits_testimonial_grid">#}
+{#							<div class="w3l_testimonial_grid">#}
+{#								<p>The house manager I hired is amazing. Kudos to you guys.</p>#}
+{#								<h4>Miss Keysha</h4>#}
+{#								<h5>Employer</h5>#}
+{#								<div class="w3l_testimonial_grid_pos">#}
+{#									<img src="{% static 'images/1.png' %}" alt=" " class="img-responsive" />#}
+{#								</div>#}
+{#							</div>#}
+{#						</div>#}
+{#						<div class="agileits_testimonial_grid">#}
+{#							<div class="w3l_testimonial_grid">#}
+{#								<p>I gained insightful knowledge that bettered me.</p>#}
+{#								<h4>Laura Paul</h4>#}
+{#								<h5>Student</h5>#}
+{#								<div class="w3l_testimonial_grid_pos">#}
+{#									<img src="{% static 'images/2.png' %}" alt=" " class="img-responsive" />#}
+{#								</div>#}
+{#							</div>#}
+{#						</div>#}
+{#						<div class="agileits_testimonial_grid">#}
+{#							<div class="w3l_testimonial_grid">#}
+{#								<p>We recruited their services when relocating to our new office premises. They did a splendid job.</p>#}
+{#								<h4>Michael Doe</h4>#}
+{#								<h5>Business man</h5>#}
+{#								<div class="w3l_testimonial_grid_pos">#}
+{#									<img src="{% static 'images/3.png' %}" alt=" " class="img-responsive" />#}
+{#								</div>#}
+{#							</div>#}
+{#						</div>#}
+{#				</section>#}
+{#			</div>#}
+{#		</div>#}
+{#	</div>#}
 <!-- //testimonials -->
 {% endblock %}
